@@ -23,7 +23,6 @@ describe('immutability', () => {
     function addMovie(currentState, movie) {
       return currentState.update('movies', movies => movies.push(movie));
     }
-    
     it('is immutable', () => {
       let state = Map({
         movies: List.of('Trainspotting', '28 Days Later')
